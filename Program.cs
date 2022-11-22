@@ -70,14 +70,12 @@ namespace ChooseYourOwnAdventure
   
     public static void second()
     {
-    Random rnd = new Random();
-    int roomNumber  = rnd.Next(1, 10);
     Console.Write("STAY at Hollows Inn?: ");
     string? stayChoice = Console.ReadLine()!.ToUpper();
         
       if (stayChoice == "YES" || stayChoice == "STAY")
       {
-        Console.Write($"Mr. Dunning answers excitedly \"Excellent! It will be $100 a night. You'll be staying in ROOM {roomNumber}. Let me get your KEY.\" \n");
+        Console.Write($"Mr. Dunning answers excitedly \"Excellent! It will be $100 a night. You'll be staying in ROOM 6. Let me get your KEY.\" \n");
         Console.Write("Mr Dunning hands you the KEY. \n");
         third();
       }
@@ -95,7 +93,7 @@ namespace ChooseYourOwnAdventure
       else
       {
           Console.Clear();
-          Console.WriteLine("You must reply Yes or no.");
+          Console.WriteLine("You must reply Yes or no. \n");
           Console.WriteLine("Press 'Enter' to continue.");
           Console.ReadLine();
           second();
@@ -108,32 +106,57 @@ namespace ChooseYourOwnAdventure
       Console.Write("Which do you take?: ");
       string? elevationChoice = Console.ReadLine()!.ToUpper();
 
-        if (elevationChoice == "STAIRS")
-        {
-          Console.Write("You proceed up the stairs to your room.");
-          fourth();
-        }
-        else if (elevationChoice == "ELEVATOR")
-        {
-          Console.Write("The ELEVATOR reads \"Out of Order\" \n");
-          Console.Write("Maybe you should try the STAIRS.");
-          Console.WriteLine("Press 'Enter' to continue.");
-          Console.ReadLine();
-          third();
-        }
-        else 
-        {
-          Console.Write("You must choose between ELEVATOR or STAIRS");
-          Console.WriteLine("Press 'Enter' to continue.");
-          Console.ReadLine();
-          third();
-        }
+      if (elevationChoice == "STAIRS")
+      {
+        Console.Write("You proceed up the stairs to your room. \n");
+        fourth();
       }
+      else if (elevationChoice == "ELEVATOR")
+      {
+        Console.Write("The ELEVATOR reads \"Out of Order\" \n");
+        Console.Write("Maybe you should try the STAIRS. \n");
+        Console.WriteLine("Press 'Enter' to continue.");
+        Console.ReadLine();
+        third();
+      }
+      else 
+      {
+        Console.Write("You must choose between ELEVATOR or STAIRS \n");
+        Console.WriteLine("Press 'Enter' to continue.");
+        Console.ReadLine();
+        third();
+      }
+    }
 
-       public static void fourth()
-       {
-        Console.Write("At the top of the stairs is a sign");
-        Console.Write(" <-- ROOMS 1-5 | ROOMS 6-10 -->");
-       }
+    public static void fourth()
+    {
+      Console.Write("At the top of the stairs is a sign \n");
+      Console.Write("<-- ROOMS 1-5 | ROOMS 6-10 --> \n");
+      Console.Write("Which way do you go?: ");
+      string? hallwayChoice = Console.ReadLine()!.ToUpper();
+
+      if (hallwayChoice == "LEFT")
+      {
+        Console.Write("You decide to go left. \n");
+        Console.Write("Rooms 1-5 are down this hallway. \n");
+        Console.Write("Which room will you choose?: ");
+        //switch statement here
+
+      }
+      else if (hallwayChoice == "RIGHT")
+      {
+        Console.Write("You decide to go right. \n");
+        Console.Write("Rooms 6-10 are down this hallway. \n");
+        Console.Write("Which room will you choose?: ");
+        //switch statement here
+      }
+      else
+      {
+        Console.Write("You must choose a direction. \n");
+        Console.Write("LEFT or RIGHT. \n");
+        Console.ReadLine();
+        fourth();
+      }
+    }
   }
 }
