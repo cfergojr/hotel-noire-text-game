@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\cferg\\Downloads\\text-based-game\\text-based-game.csproj",
+      "projectUniqueName": "C:\\Users\\cferg\\Downloads\\repos\\hotel-noire-text-game\\text-based-game.csproj",
       "projectName": "text-based-game",
-      "projectPath": "C:\\Users\\cferg\\Downloads\\text-based-game\\text-based-game.csproj",
+      "projectPath": "C:\\Users\\cferg\\Downloads\\repos\\hotel-noire-text-game\\text-based-game.csproj",
       "packagesPath": "C:\\Users\\cferg\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\cferg\\Downloads\\text-based-game\\obj\\",
+      "outputPath": "C:\\Users\\cferg\\Downloads\\repos\\hotel-noire-text-game\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\cferg\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -59,7 +59,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
       }
     }
   }
