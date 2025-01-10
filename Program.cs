@@ -53,7 +53,7 @@ namespace text_based_game
       }
       else if (ringChoice == "EXIT" || ringChoice == "LEAVE") 
       {
-          Console.Write("You decide this hotel looks like a dump and leave. \n Pretty anti-climatic. \n THE END! \n");
+          Console.Write("You decide this hotel looks like a dump and leave. \n Pretty anti-climactic. \n THE END! \n");
           Console.Write("Press 'ENTER' to restart game.");
           Console.ReadLine();
           Console.Clear();
@@ -83,7 +83,7 @@ namespace text_based_game
       {
           Console.Clear();
           Console.Write("Mr. Dunning frowns.\n \"Well then don't waste my time!\" \n ");
-          Console.Write("You leave the hotel. Pretty anti-climatic. \n ");
+          Console.Write("You leave the hotel. Pretty anti-climactic. \n ");
           Console.Write("THE END! \n");
           Console.Write("Press 'ENTER' to restart game.");
           Console.ReadLine();
