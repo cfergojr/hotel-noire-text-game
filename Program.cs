@@ -4,20 +4,20 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace ChooseYourOwnAdventure
+namespace text_based_game
 {
   class Program
   {
     static void Main(string[] args)
     {
-    gameTitle();
+    GameTitle();
     first();
     second();
     third();
     fourth();
     }
 
-    public static void gameTitle()
+    public static void GameTitle()
     {
     /* HOTEL NOIRE */
 
@@ -25,7 +25,7 @@ namespace ChooseYourOwnAdventure
     Console.Clear();
     Console.Write("HOTEL NOIRE: A Murder/Mystery Text Game \n");
     Console.Write("By: Christopher Fergo Jr. \n");
-    Console.Write("(c) 2022 \n \n");
+    Console.Write("(c) 2025 \n \n");
     Console.Write("Enter your name?: ");
     string? name = Console.ReadLine();
     Console.Clear();
@@ -57,7 +57,7 @@ namespace ChooseYourOwnAdventure
           Console.Write("Press 'ENTER' to restart game.");
           Console.ReadLine();
           Console.Clear();
-          gameTitle();
+          GameTitle();
       }
       else 
       {
@@ -88,7 +88,7 @@ namespace ChooseYourOwnAdventure
           Console.Write("Press 'ENTER' to restart game.");
           Console.ReadLine();
           Console.Clear();
-          gameTitle();
+          GameTitle();
       }
       else
       {
